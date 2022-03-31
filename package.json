@@ -1,0 +1,35 @@
+{
+  "name": "vector",
+  "version": "1.0.0",
+  "description": "A 2d vector library",
+  "repository": "https://github.com/craigdallimore/vector",
+  "bugs": {
+    "url": "https://github.com/craigdallimore/issues",
+    "email": "decoy9697@gmail.com"
+  },
+  "keywords": [
+    "vector",
+    "math",
+    "2d"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "craigdallimore <decoy9697@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "fast-check": "^2.24.0",
+    "jest": "^27.5.1"
+  },
+  "dependencies": {
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  }
+}
