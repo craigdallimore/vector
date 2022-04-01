@@ -1,6 +1,6 @@
 {
-  "name": "vector",
-  "version": "1.0.0",
+  "name": "@decoy9697/vector",
+  "version": "1.0.1",
   "description": "A 2d vector library",
   "repository": "https://github.com/craigdallimore/vector",
   "bugs": {
@@ -17,10 +17,9 @@
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "craigdallimore <decoy9697@gmail.com>",
   "license": "MIT",
-  "private": false,
   "scripts": {
+    "prepublish": "tsc",
     "test": "jest"
   },
   "devDependencies": {
