@@ -1,6 +1,6 @@
 {
   "name": "@decoy9697/vector",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A 2d vector library",
   "repository": "https://github.com/craigdallimore/vector",
   "bugs": {
@@ -19,16 +19,30 @@
   "types": "dist/index.d.ts",
   "license": "MIT",
   "scripts": {
-    "prepublish": "tsc",
-    "test": "jest"
+    "format": "xo --fix",
+    "prepublishOnly": "yarn test && tsc",
+    "test-coverage": "c8 --check-coverage --branches 100 --functions 100 --lines 100 --statements 100 --reporter lcov jest src",
+    "test": "yarn run format && jest && yarn run test-coverage"
+  },
+  "xo": {
+    "prettier": true,
+    "rules": {
+      "import/extensions": "off",
+      "unicorn/prefer-module": "off"
+    }
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
+    "c8": "^7.11.0",
     "fast-check": "^2.24.0",
-    "jest": "^27.5.1"
-  },
-  "dependencies": {
+    "jest": "^27.5.1",
     "ts-jest": "^27.1.4",
-    "typescript": "^4.6.3"
-  }
+    "typescript": "^4.6.3",
+    "xo": "^0.48.0"
+  },
+  "dependencies": {}
 }
