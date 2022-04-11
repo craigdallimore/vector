@@ -29,6 +29,8 @@ It exposes the following functions for working with these vectors:
 | subtract        | `(Vector, Vector) => Vector` |
 | vectorToRadians | `(Vector) => number`         |
 
+---
+
 ## Development
 
 This project uses [nix](https://nixos.org/) to install dependencies for the development shell.
